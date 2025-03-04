@@ -76,7 +76,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 700px;
   padding: 0 10px;
+}
+
+.top-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
 }
 
 .top-slide__img--indent {
@@ -85,7 +92,6 @@ body {
 
 .top-slide__content {
   flex-basis: 183px;
-
   margin-top: -110px;
 }
 
@@ -110,6 +116,7 @@ body {
 .top-slide__btn {
   display: inline-block;
   padding: 21px 55px;
+  margin-left: auto;
   font-family: 'Inter-Bold', sans-serif;
   font-weight: 700;
   color: #7449bb;
@@ -117,3 +124,97 @@ body {
   text-transform: uppercase;
   border: 1px solid #7449bb;
 }
+
+/* .swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: none;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: none;
+} */
+.top .swiper {
+  padding-bottom: 25px;
+}
+
+.container-arrow {
+  position: relative;
+  max-width: 1200px;
+  padding: 0;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 51px;
+}
+
+.swiper-button-next {
+  left: 71px;
+  right: auto;
+}
+
+.swiper-button-prev:after {
+  content: '';
+  position: absolute;
+  width: 51px;
+  height: 16px;
+  background-image: url('../images/arrow-prev.svg');
+  background-repeat: no-repeat;
+  background-size: 51px 16px;
+  background-position: center;
+}
+
+.swiper-button-next:after {
+  content: '';
+  position: absolute;
+  width: 51px;
+  height: 16px;
+  /* left: 70px;
+  right: auto; */
+  background-image: url('../images/arrow-next.svg');
+  background-repeat: no-repeat;
+  background-size: 51px 16px;
+  background-position: center;
+}
+
+/* .swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: '';
+  position: absolute;
+  width: 51px;
+  height: 16px;
+  background-image: url('../images/arrow-prev.svg');
+  background-size: 51px 16px;
+  background-repeat: no-repeat;
+} */
+
+/* .swiper-button-prev:after,
+.swiper-button-next:after {
+  content: none;
+}
+
+.container-arrow {
+  position: relative;
+  max-width: 1200px;
+  padding: 0;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 51px;
+  height: 16px;
+  bottom: -20px;
+}
+
+.swiper-button-prev {
+}
+
+.swiper-button-next {
+  left: 71px;
+}
+
+.swiper-button-prev--custom {
+  position: absolute;
+  bottom: -20px;
+} */
