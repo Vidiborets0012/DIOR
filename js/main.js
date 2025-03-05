@@ -15,7 +15,7 @@ const swiperTop = new Swiper('.top__slider', {
 });
 
 const swiperAbout = new Swiper('.about__slider', {
-    slidesPerView: 3,
+    slidesPerView: 4,
     spaceBetween: 20,
     freeMode: true,
     
