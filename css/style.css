@@ -231,3 +231,71 @@ body {
 .swiper-button-prev.swiper-button-disabled {
   opacity: 1;
 }
+
+.accordeon.section-padding {
+  padding-top: 25px;
+}
+
+.accordeon__inner {
+  padding-left: 200px;
+  padding-bottom: 73px;
+}
+
+.accordeon__item {
+  position: relative;
+  padding: 0 100px 0 0;
+  border-bottom: 1px solid #000;
+}
+
+.accordeon__item::before {
+  content: '';
+  position: absolute;
+  right: 85px;
+  top: 50px;
+  width: 16px;
+  height: 51px;
+  background-image: url('../images/arrow-down.svg');
+}
+
+.accordeon__item:last-child::after {
+  content: '';
+  position: absolute;
+  bottom: -73px;
+  left: 268px;
+  background-image: url('../images/accordeon_decor.jpg');
+  width: 65px;
+  height: 125px;
+}
+
+.accordeon__triger {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding-top: 50px;
+}
+
+.accordeon__triger-title {
+  flex-basis: 300px;
+  padding-bottom: 41px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.accordeon__triger-text {
+  flex-basis: 387px;
+  margin-right: 104px;
+  padding-bottom: 20px;
+}
+
+.accordeon__content {
+  display: none;
+  padding: 20px 0;
+}
+
+.accordeon__item--activ .accordeon__content {
+  display: block;
+}
+
+.accordeon__content-text + .accordeon__content-text {
+  margin-top: 10px;
+}
