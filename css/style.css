@@ -123,6 +123,12 @@ body {
   background: rgba(217, 217, 217, 0);
   text-transform: uppercase;
   border: 1px solid #7449bb;
+  transition: all 0.3s ease;
+}
+
+.top-slide__btn:hover {
+  color: #fff;
+  background-color: #7449bb;
 }
 
 .top .swiper {
