@@ -17,6 +17,13 @@ a {
   text-decoration: none;
 }
 
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .container {
   max-width: 1220px;
   padding: 0 10px;
@@ -352,4 +359,17 @@ body {
   font-style: italic;
   font-size: 32px;
   line-height: 1.34;
+}
+
+.video__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  max-width: 997px;
+  min-height: 600px;
+  background-image: url('../images/video-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
