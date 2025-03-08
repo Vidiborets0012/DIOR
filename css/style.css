@@ -567,6 +567,10 @@ body {
     margin-top: auto;
     margin-bottom: auto;
   }
+
+  .video__box {
+    min-height: 435px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -684,6 +688,10 @@ body {
   .about__item-img {
     width: 280px;
   }
+
+  .section-padding {
+    padding: 25px 0 25px;
+  }
 }
 
 @media (max-width: 420px) {
@@ -711,5 +719,9 @@ body {
 
   .accordeon__item:last-child::after {
     left: 210px;
+  }
+
+  .video__box {
+    min-height: 225px;
   }
 }
