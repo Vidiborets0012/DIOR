@@ -2,10 +2,10 @@ const swiperTop = new Swiper('.top__slider', {
 
     effect: "fade",
     
-    // autoplay: {
-    //     delay: 3500,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
 
     navigation: {
         nextEl: '.swiper-button-next',
