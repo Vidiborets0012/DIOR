@@ -468,3 +468,57 @@ body {
   display: flex;
   gap: 0 20px;
 }
+
+@media (max-width: 992px) {
+  .logo--indent {
+    margin-right: 0;
+  }
+
+  .menu--indent {
+    margin-left: 0;
+  }
+
+  .user-nav--indent {
+    margin-left: 0;
+  }
+
+  .header__inner {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 700px) {
+  .header__title {
+    flex-basis: 160px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header__title {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .header__inner {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .menu--indent {
+    margin-top: 20px;
+  }
+
+  .menu__list {
+    text-align: right;
+  }
+
+  .logo,
+  .user-nav {
+    order: -1;
+  }
+}
