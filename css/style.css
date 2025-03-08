@@ -267,7 +267,7 @@ body {
 .accordeon__item:last-child::after {
   content: '';
   position: absolute;
-  bottom: -73px;
+  bottom: -112px;
   left: 268px;
   background-image: url('../images/accordeon_decor.jpg');
   width: 65px;
@@ -477,6 +477,10 @@ body {
   .about__text--bold {
     margin-top: 20px;
   }
+
+  .accordeon__inner {
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 992px) {
@@ -518,6 +522,25 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .accordeon__triger {
+    display: block;
+    padding-top: 20px;
+  }
+
+  .accordeon__triger-title {
+    padding-bottom: 10px;
+  }
+
+  .accordeon__item::before {
+    top: 0;
+    bottom: 0;
+    right: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
 @media (max-width: 700px) {
   .header__title {
     flex-basis: 160px;
@@ -546,6 +569,10 @@ body {
   .about__item-img {
     width: 360px;
     height: auto;
+  }
+
+  .accordeon__triger-text {
+    margin-right: 50px;
   }
 }
 
@@ -589,6 +616,14 @@ body {
     width: 300px;
     height: auto;
   }
+
+  .accordeon__item {
+    padding: 0 50px 0 0;
+  }
+
+  .accordeon__triger-text {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 440px) {
@@ -631,5 +666,9 @@ body {
   .logo,
   .user-nav {
     order: -1;
+  }
+
+  .accordeon__item:last-child::after {
+    left: 210px;
   }
 }
